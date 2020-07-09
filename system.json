@@ -2,7 +2,7 @@
     "name": "sea",
     "title": "7-te See",
     "description": "Ein Versuch das 7te See-Regelwerk nach Foundry zu bringen.",
-    "version": 0.15,
+    "version": 0.16,
     "minimumCoreVersion": "0.6.4",
     "compatibleCoreVersion": "0.6.4",
     "templateVersion": 2,
