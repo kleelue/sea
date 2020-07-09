@@ -1,0 +1,291 @@
+.sea-character {
+  font-size: medium;
+  min-width: 600px;
+  min-height: 700px;
+}
+.sea-character .header {
+  display: flex;
+  flex-direction: column;
+  margin: 1ex 1ex 0ex 1ex;
+}
+.sea-character .header .header-1,
+.sea-character .header .header-2,
+.sea-character .header .header-3,
+.sea-character .header .header-4,
+.sea-character .header .header-5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border-bottom: 5px double #00004d;
+}
+.sea-character .header .header-1 .profile-img {
+  width: 100px;
+  height: 100px;
+}
+.sea-character .header .header-1 .profile-name {
+  width: 100%;
+  min-width: 350px;
+  height: 100px;
+  background: none;
+  font-size: 2.25ex;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  border-left: 5px double #00004d;
+  border-right: 5px double #00004d;
+  border-radius: 0px;
+}
+.sea-character .header .header-1 .profile-name:focus {
+  box-shadow: none;
+}
+.sea-character .header .header-1 .profile-logo {
+  width: 150px;
+  border: none;
+}
+.sea-character .header .header-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 4ex;
+  font-size: 15px;
+  text-align: center;
+  padding: 0ex 0.5ex;
+}
+.sea-character .header .header-2 label {
+  min-width: 100px;
+  margin-left: -0.5ex;
+}
+.sea-character .header .header-2 .wounds {
+  height: 4ex;
+  display: flex;
+  align-items: center;
+  border-left: 5px double #00004d;
+  border-right: 5px double #00004d;
+  padding: 0ex 1.5ex;
+  width: 350px;
+}
+.sea-character .header .header-2 .wounds .wound {
+  color: #00004d;
+}
+.sea-character .header .header-2 .wounds .wound:hover {
+  text-shadow: 2px 2px 4px #00004d;
+}
+.sea-character .header .header-2 .wounds .crit {
+  color: #800000;
+  padding-right: 0.5ex;
+}
+.sea-character .header .header-2 .wounds .crit:hover {
+  text-shadow: 2px 2px 4px #800000;
+}
+.sea-character .header .header-2 .raises-img {
+  height: 25px;
+  min-width: 25px;
+  margin: 0ex 2ex;
+}
+.sea-character .header .header-2 .raises-val {
+  background: none;
+  border: 1px dotted #00004d;
+  border-radius: 0px;
+  width: 7ex;
+}
+.sea-character .header .header-3 {
+  display: grid;
+  font-size: smaller;
+  grid-template-columns: 40% 10% 50%;
+  padding: 0.5ex;
+  text-align: right;
+  border-bottom: 5px double #00004d;
+}
+.sea-character .header .header-3 .item {
+  grid-column: 3;
+  border-bottom: 1px dotted #00004d;
+}
+.sea-character .header .header-3 .desc {
+  grid-column: 2;
+  border-bottom: 1px dotted #00004d;
+}
+.sea-character .header .header-4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 4ex;
+  font-size: 15px;
+  text-align: center;
+  padding: 0ex 0.5ex;
+}
+.sea-character .header .header-4 label {
+  min-width: 100px;
+  margin-left: -0.5ex;
+}
+.sea-character .header .header-4 .corruption {
+  height: 4ex;
+  display: flex;
+  align-items: center;
+  border-left: 5px double #00004d;
+  border-right: 5px double #00004d;
+  padding-left: 2ex;
+  width: 256px;
+  align-self: middle;
+}
+.sea-character .header .header-4 .wealth-img {
+  height: 20px;
+  min-width: 20px;
+  margin: 0ex 2ex;
+}
+.sea-character .header .header-4 .wealth-val {
+  background: none;
+  border: 1px dotted #00004d;
+  border-radius: 0px;
+  width: 7ex;
+}
+.sea-character .header .header-4 .heropoints-img {
+  height: 20px;
+  min-width: 20px;
+  margin: 0ex 2ex;
+}
+.sea-character .header .header-4 .heropoints-val {
+  background: none;
+  border: 1px dotted #00004d;
+  border-radius: 0px;
+  width: 7ex;
+}
+.sea-character .nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0ex 1ex;
+  border-bottom: 5px double #00004d;
+  justify-content: space-evenly;
+}
+.sea-character .nav .item {
+  padding: 1ex;
+}
+.sea-character .nav .item:hover {
+  text-shadow: 2px 2px 4px #00004d;
+}
+.sea-character .body {
+  margin: 0ex 1ex;
+  overflow: hidden;
+}
+.sea-character .body .tab {
+  height: 100%;
+  overflow-y: auto;
+}
+.sea-character .attr_skills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1ex;
+  color: black;
+}
+.sea-character .attr_skills .attributes {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.sea-character .attr_skills .skills {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.sea-character .attr_skills .roll {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 2ex;
+  padding-bottom: 3ex;
+}
+.sea-character .attr_skills .roll input {
+  width: 7ex;
+  height: 30px;
+  border: 1px dotted #00004d;
+  border-radius: 0px;
+  background: none;
+  align-self: center;
+  padding-left: 0.5ex;
+}
+.sea-character .attr_skills .roll .roll-img {
+  width: 50px;
+  margin-left: 2ex;
+  box-shadow: 2px 2px 4px #00004d;
+}
+.sea-character .attr_skills .roll .roll-img:active {
+  box-shadow: -2px -2px 4px #00004d;
+}
+.sea-character .attr_skills .reset-roll {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 2ex;
+  padding: 0.3ex 0.3ex;
+  box-shadow: 2px 2px 4px #00004d;
+}
+.sea-character .attr_skills .reset-roll:hover {
+  text-shadow: 2px 2px 4px #00004d;
+}
+.sea-character .attr_skills .reset-roll:active {
+  box-shadow: -2px -2px 4px #00004d;
+}
+.sea-character .attr_skills .item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px dotted #00004d;
+}
+.sea-character .attr_skills .item label {
+  font-weight: bold;
+  width: 45%;
+  text-align: right;
+  padding: 0.2ex;
+  font-size: 14px;
+  padding-right: 2ex;
+}
+.sea-character .attr_skills .item .circles {
+  display: flex;
+  width: 45%;
+  padding: 0.2ex;
+  justify-content: center;
+}
+.sea-character .attr_skills .descriptions {
+  display: flex;
+  flex-direction: row;
+}
+.sea-character .attr_skills .descriptions label {
+  font-weight: bold;
+  font-size: 14px;
+  padding-right: 1ex;
+}
+.sea-character .attr_skills .descriptions .desc {
+  font-size: 14px;
+}
+.sea-character .attr_skills .rolling {
+  color: #800000;
+}
+.sea-character .attr_skills .bonus-label {
+  align-self: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding-right: 1ex;
+}
+.sea-character .attr_skills .locked {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 1ex;
+  padding: 0.3ex 0.3ex;
+  box-shadow: 2px 2px 4px #00004d;
+}
+.sea-character .attr_skills .locked:hover {
+  text-shadow: 2px 2px 4px #00004d;
+}
+.sea-character .attr_skills .locked:active {
+  box-shadow: -2px -2px 4px #00004d;
+}
+.sea-character .note-edit {
+  width: 100%;
+  font-size: 14px;
+  padding: 1ex;
+}

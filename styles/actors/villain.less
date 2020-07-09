@@ -1,0 +1,151 @@
+@blue: #00004d;
+@red : #800000;
+
+.sea-villain {
+    font-size : medium;
+    min-width : 600px;
+    min-height: 700px;
+
+    .header {
+        display       : flex;
+        flex-direction: column;
+        margin        : 1ex 1ex 0ex 1ex;
+
+        .header-1,
+        .header-2 {
+            display       : flex;
+            flex-direction: row;
+            align-items   : center;
+            width         : 100%;
+            border-bottom : 5px double @blue;
+        }
+
+        .header-1 {
+            .profile-img {
+                width : 100px;
+                height: 100px;
+            }
+
+            .profile-name {
+                width        : 100%;
+                min-width    : 350px;
+                height       : 100px;
+                background   : none;
+                font-size    : 2.25ex;
+                text-align   : center;
+                font-weight  : bold;
+                border       : none;
+                border-left  : 5px double @blue;
+                border-right : 5px double @blue;
+                border-radius: 0px;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .profile-logo {
+                width : 150px;
+                border: none;
+            }
+        }
+
+        .header-2 {
+            width          : 100%;
+            justify-content: space-evenly;
+            padding        : 1ex;
+            color          : white;
+
+            .level,
+            .strength,
+            .influence,
+            .raises {
+                display         : flex;
+                flex-direction  : column;
+                text-align      : center;
+                width           : 20%;
+                background-color: @blue;
+                border-radius   : 20px;
+                border          : 1px dotted white;
+            }
+
+            .strength {
+                &:hover {
+                    text-shadow: 2px 2px 4px white;
+                }
+            }
+
+            input {
+                width      : 8ex;
+                text-align : center;
+                border     : 0px;
+                margin-left: 2ex;
+                padding    : 1ex 0ex;
+                background : transparent;
+                font-size  : 20px;
+                color      : white;
+            }
+
+            label {
+                padding      : 1ex 0ex;
+                font-weight  : bold;
+                border-bottom: 1px dotted white;
+            }
+
+            .img {
+                padding      : 1ex 0ex;
+                border-bottom: 1px dotted white;
+                width        : 100%;
+
+                img {
+                    width     : 15px;
+                    align-self: center;
+                }
+            }
+
+
+        }
+    }
+
+    .nav {
+        display        : flex;
+        flex-direction : row;
+        margin         : 0ex 1ex;
+        border-bottom  : 5px double @blue;
+        justify-content: space-evenly;
+
+        .item {
+            padding: 1ex;
+
+            &:hover {
+                text-shadow: 2px 2px 4px @blue;
+            }
+        }
+    }
+
+    .body {
+        margin  : 0ex 1ex;
+        overflow: hidden;
+
+        .tab {
+            height    : 100%;
+            overflow-y: auto;
+        }
+
+        .sheet-edit {
+            padding: 1ex;
+
+            .editor,
+            .editor-content {
+                min-height: 50ex;
+            }
+        }
+
+        .note-edit {
+            width    : 100%;
+            font-size: 14px;
+            padding  : 1ex;
+        }
+    }
+
+}

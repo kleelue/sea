@@ -1,0 +1,29 @@
+{
+    "name": "sea",
+    "title": "7-te See",
+    "description": "Ein Versuch das 7te See-Regelwerk nach Foundry zu bringen.",
+    "version": 0.15,
+    "minimumCoreVersion": "0.6.4",
+    "compatibleCoreVersion": "0.6.4",
+    "templateVersion": 2,
+    "author": "Luette",
+    "esmodules": [
+        "module/sea.js"
+    ],
+    "styles": [
+        "styles/sea.css",
+        "styles/actors/character.css",
+        "styles/actors/villain.css",
+        "styles/actors/dangerpoints.css"
+    ],
+    "packs": [],
+    "languages": [],
+    "gridDistance": 5,
+    "gridUnits": "ft",
+    "primaryTokenAttribute": null,
+    "secondaryTokenAttribute": null,
+    "url": "https://github.com/kleelue/7-th-sea/blob/master/sea/README.md",
+    "manifest": "https://raw.githubusercontent.com/kleelue/7-th-sea/master/sea/system.json",
+    "download": "https://github.com/kleelue/7-th-sea/files/4872259/stable_release.zip",
+    "license": "LICENSE.txt"
+}

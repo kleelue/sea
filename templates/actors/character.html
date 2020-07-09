@@ -1,0 +1,95 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{!-- Sheet Header --}}
+    <header class="header">
+        <div class="header-1">
+            <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+            <span class="right-double-border"></span>
+            <input class="profile-name" name="name" type="text" value="{{actor.name}}" placeholder="Name" />
+            <span class="right-double-border"></span>
+            <img class="profile-logo" src="systems/sea/images/7te_see_logo.png" title="7-te See" />
+        </div>
+        <div class="header-2">
+            <label>{{data.header.wounds.label}}</label>
+            <div class="wounds">
+                {{{buildDots data.header.wounds.value data.header.wounds.max "wounds" data.header.wounds.critvalue}}}
+            </div>
+            <img class="raises-img" src="systems/sea/images/arrow-up.png" title="Steigerungen" />
+            <input class="raises-val" type="number" name="data.header.raises.value" value="{{data.header.raises.value}}" min="{{data.header.raises.min}}" placeholder="0" title="Steigerungen" />
+        </div>
+        <div class="header-3">
+            {{{buildWoundDesc data.header.wounds.critvalue data.header.wounds.description}}}
+        </div>
+        <div class="header-4">
+            <label>{{data.header.corruption.label}}</label>
+            <div class="corruption">
+                {{{buildDots data.header.corruption.value data.header.corruption.max "corruption" ""}}}
+            </div>
+            <img class="wealth-img" src="systems/sea/images/coins.png" title="Reichtum" />
+            <input class="wealth-val" name="data.header.wealth.value" type="number" value="{{data.header.wealth.value}}" min="0" title="Reichtum" />
+            <img class="heropoints-img" src="systems/sea/images/muscle.png" title="Heldenpunkte" />
+            <input class="heropoints-val" name="data.header.heropoints.value" type="number" value="{{data.header.heropoints.value}}" min="0" title="Heldenpunkte" />
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="nav" data-group="primary">
+        <a class="item" data-tab="skills">Eigenschaften & Fähigkeiten</a>
+        <a class="item" data-tab="notes">Notizen</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="body">
+        {{!-- Skills Tab --}}
+        <div class="tab" data-group="primary" data-tab="skills">
+            <div class="attr_skills">
+                <div class="attributes">
+                    {{#each data.attributes as |attr key|}}
+                    <div class="item">
+                        <label class="roll-attr {{key}} {{attr.cssClass}}" data-key="{{key}}" data-attr="{{attr.value}}">{{attr.label}}</label>
+                        <div class="circles">
+                            {{{buildDots attr.value attr.max "attributes" key}}}
+                        </div>
+                    </div>
+                    {{/each}}
+                    <div class="reset-roll">
+                        Auswahl zurücksetzen
+                    </div>
+                    <div class="roll">
+                        <input type="number" class="bonus-attr" name="data.rollattr.value" min="0" value="{{data.rollattr.value}}" title="Attributswert" style="display:none">
+                        <input type="number" class="bonus-skill" name="data.rollskill.value" min="0" value="{{data.rollskill.value}}" title="Skillwert" style="display:none">
+                        <div class="bonus-label">Bonuswürfel:</div>
+                        <input type="number" class="bonus-roll" name="data.rollbonus" min="0" value="{{data.rollbonus}}" title="Bonuswürfel">
+                        <img class="roll-img" src="systems/sea/images/d20.png" title="Würfeln" />
+                    </div>
+                    <h4>Fähigkeitenboni</h4>
+                    {{#each data.description as |desc key|}}
+                    <div class="descriptions">
+                        <label>Stufe {{key}}:</label>
+                        <div class="desc">
+                            {{desc}}
+                        </div>
+                    </div>
+                    {{/each}}
+                    <div class="locked">
+                        {{data.locked}}
+                    </div>
+                </div>
+                <div class="skills">
+                    {{#each data.skills as |skill key|}}
+                    <div class="item">
+                        <label class="roll-skill {{key}} {{skill.cssClass}}" data-key="{{key}}" data-skill="{{skill.value}}">{{skill.label}}</label>
+                        <div class="circles">
+                            {{{buildDots skill.value skill.max "skills" key}}}
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+        {{!-- Notizen Tab --}}
+        <div class="tab note-edit" data-group="primary" data-tab="notes">
+            {{editor content=data.notes target="data.notes" button=true owner=owner editable=editable}}
+        </div>
+    </section>
+</form>

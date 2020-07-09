@@ -1,0 +1,29 @@
+.sea .window-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 0ex;
+}
+.sea .window-content img {
+  border: none;
+}
+.sea .circle {
+  height: 15px;
+  width: 15px;
+  border: 1px solid;
+  border-radius: 50%;
+  border-color: #00004d;
+}
+.sea .circle.empty {
+  background: none;
+}
+.sea .circle.full {
+  background-color: #00004d;
+}
+.sea .circle:hover {
+  box-shadow: 2px 2px 4px #00004d;
+}
+.sea .editor,
+.sea .editor-content {
+  min-height: 50ex;
+}

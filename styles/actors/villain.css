@@ -1,0 +1,120 @@
+.sea-villain {
+  font-size: medium;
+  min-width: 600px;
+  min-height: 700px;
+}
+.sea-villain .header {
+  display: flex;
+  flex-direction: column;
+  margin: 1ex 1ex 0ex 1ex;
+}
+.sea-villain .header .header-1,
+.sea-villain .header .header-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border-bottom: 5px double #00004d;
+}
+.sea-villain .header .header-1 .profile-img {
+  width: 100px;
+  height: 100px;
+}
+.sea-villain .header .header-1 .profile-name {
+  width: 100%;
+  min-width: 350px;
+  height: 100px;
+  background: none;
+  font-size: 2.25ex;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  border-left: 5px double #00004d;
+  border-right: 5px double #00004d;
+  border-radius: 0px;
+}
+.sea-villain .header .header-1 .profile-name:focus {
+  box-shadow: none;
+}
+.sea-villain .header .header-1 .profile-logo {
+  width: 150px;
+  border: none;
+}
+.sea-villain .header .header-2 {
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 1ex;
+  color: white;
+}
+.sea-villain .header .header-2 .level,
+.sea-villain .header .header-2 .strength,
+.sea-villain .header .header-2 .influence,
+.sea-villain .header .header-2 .raises {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 20%;
+  background-color: #00004d;
+  border-radius: 20px;
+  border: 1px dotted white;
+}
+.sea-villain .header .header-2 .strength:hover {
+  text-shadow: 2px 2px 4px white;
+}
+.sea-villain .header .header-2 input {
+  width: 8ex;
+  text-align: center;
+  border: 0px;
+  margin-left: 2ex;
+  padding: 1ex 0ex;
+  background: transparent;
+  font-size: 20px;
+  color: white;
+}
+.sea-villain .header .header-2 label {
+  padding: 1ex 0ex;
+  font-weight: bold;
+  border-bottom: 1px dotted white;
+}
+.sea-villain .header .header-2 .img {
+  padding: 1ex 0ex;
+  border-bottom: 1px dotted white;
+  width: 100%;
+}
+.sea-villain .header .header-2 .img img {
+  width: 15px;
+  align-self: center;
+}
+.sea-villain .nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0ex 1ex;
+  border-bottom: 5px double #00004d;
+  justify-content: space-evenly;
+}
+.sea-villain .nav .item {
+  padding: 1ex;
+}
+.sea-villain .nav .item:hover {
+  text-shadow: 2px 2px 4px #00004d;
+}
+.sea-villain .body {
+  margin: 0ex 1ex;
+  overflow: hidden;
+}
+.sea-villain .body .tab {
+  height: 100%;
+  overflow-y: auto;
+}
+.sea-villain .body .sheet-edit {
+  padding: 1ex;
+}
+.sea-villain .body .sheet-edit .editor,
+.sea-villain .body .sheet-edit .editor-content {
+  min-height: 50ex;
+}
+.sea-villain .body .note-edit {
+  width: 100%;
+  font-size: 14px;
+  padding: 1ex;
+}

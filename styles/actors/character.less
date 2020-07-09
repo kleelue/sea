@@ -1,0 +1,350 @@
+@blue: #00004d;
+@red : #800000;
+
+.sea-character {
+
+    font-size : medium;
+    min-width : 600px;
+    min-height: 700px;
+
+    .header {
+        display       : flex;
+        flex-direction: column;
+        margin        : 1ex 1ex 0ex 1ex;
+
+        .header-1,
+        .header-2,
+        .header-3,
+        .header-4,
+        .header-5 {
+            display       : flex;
+            flex-direction: row;
+            align-items   : center;
+            width         : 100%;
+            border-bottom : 5px double @blue;
+        }
+
+        .header-1 {
+            .profile-img {
+                width : 100px;
+                height: 100px;
+            }
+
+            .profile-name {
+                width        : 100%;
+                min-width    : 350px;
+                height       : 100px;
+                background   : none;
+                font-size    : 2.25ex;
+                text-align   : center;
+                font-weight  : bold;
+                border       : none;
+                border-left  : 5px double @blue;
+                border-right : 5px double @blue;
+                border-radius: 0px;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .profile-logo {
+                width : 150px;
+                border: none;
+            }
+        }
+
+        .header-2 {
+            display       : flex;
+            flex-direction: row;
+            width         : 100%;
+            height        : 4ex;
+            font-size     : 15px;
+            text-align    : center;
+            padding       : 0ex 0.5ex;
+
+            label {
+                min-width  : 100px;
+                margin-left: -0.5ex
+            }
+
+            .wounds {
+                height      : 4ex;
+                display     : flex;
+                align-items : center;
+                border-left : 5px double @blue;
+                border-right: 5px double @blue;
+                padding     : 0ex 1.5ex;
+                width       : 350px;
+
+                .wound {
+                    color: @blue;
+
+                    &:hover {
+                        text-shadow: 2px 2px 4px @blue;
+                    }
+                }
+
+                .crit {
+                    color        : @red;
+                    padding-right: 0.5ex;
+
+                    &:hover {
+                        text-shadow: 2px 2px 4px @red;
+                    }
+                }
+            }
+
+            .raises-img {
+                height   : 25px;
+                min-width: 25px;
+                margin   : 0ex 2ex;
+            }
+
+            .raises-val {
+                background   : none;
+                border       : 1px dotted @blue;
+                border-radius: 0px;
+                width        : 7ex;
+            }
+        }
+
+        .header-3 {
+            display              : grid;
+            font-size            : smaller;
+            grid-template-columns: 40% 10% 50%;
+            padding              : 0.5ex;
+            text-align           : right;
+            border-bottom        : 5px double @blue;
+
+            .item {
+                grid-column  : 3;
+                border-bottom: 1px dotted @blue;
+            }
+
+            .desc {
+                grid-column  : 2;
+                border-bottom: 1px dotted @blue;
+            }
+
+        }
+
+        .header-4 {
+            display       : flex;
+            flex-direction: row;
+            width         : 100%;
+            height        : 4ex;
+            font-size     : 15px;
+            text-align    : center;
+            padding       : 0ex 0.5ex;
+
+            label {
+                min-width  : 100px;
+                margin-left: -0.5ex
+            }
+
+            .corruption {
+                height      : 4ex;
+                display     : flex;
+                align-items : center;
+                border-left : 5px double @blue;
+                border-right: 5px double @blue;
+                padding-left: 2ex;
+                width       : 256px;
+                align-self  : middle;
+            }
+
+            .wealth-img {
+                height   : 20px;
+                min-width: 20px;
+                margin   : 0ex 2ex;
+            }
+
+            .wealth-val {
+                background   : none;
+                border       : 1px dotted @blue;
+                border-radius: 0px;
+                width        : 7ex;
+            }
+
+            .heropoints-img {
+                height   : 20px;
+                min-width: 20px;
+                margin   : 0ex 2ex;
+            }
+
+            .heropoints-val {
+                background   : none;
+                border       : 1px dotted @blue;
+                border-radius: 0px;
+                width        : 7ex;
+            }
+        }
+    }
+
+    .nav {
+        display        : flex;
+        flex-direction : row;
+        margin         : 0ex 1ex;
+        border-bottom  : 5px double @blue;
+        justify-content: space-evenly;
+
+        .item {
+            padding: 1ex;
+
+            &:hover {
+                text-shadow: 2px 2px 4px @blue;
+            }
+        }
+    }
+
+    .body {
+        margin  : 0ex 1ex;
+        overflow: hidden;
+
+        .tab {
+            height    : 100%;
+            overflow-y: auto;
+        }
+    }
+
+    .attr_skills {
+        width          : 100%;
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-evenly;
+        padding        : 1ex;
+        color          : black;
+
+        .attributes {
+            display       : flex;
+            flex-direction: column;
+            width         : 45%;
+        }
+
+        .skills {
+            display       : flex;
+            flex-direction: column;
+            width         : 45%;
+        }
+
+        .roll {
+            display        : flex;
+            justify-content: center;
+            text-align     : center;
+            vertical-align : middle;
+            padding-top    : 2ex;
+            padding-bottom : 3ex;
+
+            input {
+                width        : 7ex;
+                height       : 30px;
+                border       : 1px dotted @blue;
+                border-radius: 0px;
+                background   : none;
+                align-self   : center;
+                padding-left : 0.5ex;
+            }
+
+            .roll-img {
+                width      : 50px;
+                margin-left: 2ex;
+                box-shadow : 2px 2px 4px @blue;
+
+                &:active {
+                    box-shadow: -2px -2px 4px @blue;
+                }
+            }
+        }
+
+        .reset-roll {
+            display        : flex;
+            justify-content: center;
+            text-align     : center;
+            vertical-align : middle;
+            margin-top     : 2ex;
+            padding        : 0.3ex 0.3ex;
+            box-shadow     : 2px 2px 4px @blue;
+
+            &:hover {
+                text-shadow: 2px 2px 4px @blue;
+            }
+
+            &:active {
+                box-shadow: -2px -2px 4px @blue;
+            }
+        }
+
+        .item {
+            display       : flex;
+            flex-direction: row;
+            border-bottom : 1px dotted @blue;
+
+            label {
+                font-weight  : bold;
+                width        : 45%;
+                text-align   : right;
+                padding      : 0.2ex;
+                font-size    : 14px;
+                padding-right: 2ex;
+            }
+
+            .circles {
+                display        : flex;
+                width          : 45%;
+                padding        : 0.2ex;
+                justify-content: center;
+            }
+        }
+
+        .descriptions {
+            display       : flex;
+            flex-direction: row;
+
+            label {
+                font-weight  : bold;
+                font-size    : 14px;
+                padding-right: 1ex;
+            }
+
+            .desc {
+                font-size: 14px;
+            }
+        }
+
+        .rolling {
+            color: @red;
+        }
+
+        .bonus-label {
+            align-self   : center;
+            font-weight  : bold;
+            font-size    : 14px;
+            padding-right: 1ex;
+        }
+
+        .locked {
+            display        : flex;
+            justify-content: center;
+            text-align     : center;
+            vertical-align : middle;
+            margin-top     : 1ex;
+            padding        : 0.3ex 0.3ex;
+            box-shadow     : 2px 2px 4px @blue;
+
+            &:hover {
+                text-shadow: 2px 2px 4px @blue;
+            }
+
+            &:active {
+                box-shadow: -2px -2px 4px @blue;
+            }
+        }
+    }
+
+    .note-edit {
+        width    : 100%;
+        font-size: 14px;
+        padding  : 1ex;
+    }
+}

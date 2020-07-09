@@ -1,0 +1,48 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{!-- Sheet Header --}}
+    <header class="header">
+        <label class="dec" data-value="{{data.value}}" data-dec="5" title="-5">--</label>
+        <label class="dec" data-value="{{data.value}}" data-dec="1" title="-1">-</label>
+        <div class="points">
+            <label>{{data.label}}</label>
+            <input class="profile-name" name="data.value" type="number" value="{{data.value}}" placeholder="0" min="0" />
+        </div>
+        <label class="inc" data-value="{{data.value}}" data-inc="1" title="+1">+</label>
+        <label class="inc" data-value="{{data.value}}" data-inc="5" title="+5">++</label>
+    </header>
+
+    <!-- {{!-- Sheet Tab Navigation --}}
+    <nav class="nav" data-group="primary">
+        <a class="item" data-tab="skills">Eigenschaften</a>
+        <a class="item" data-tab="notes">Notizen</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="body">
+        {{!-- Skills Tab --}}
+        <div class="tab" data-group="primary" data-tab="skills">
+            <div class="skills">
+                <div class="level">
+                    <label>{{data.level.label}}</label>
+                    <input type="number" min="0" name="data.level.value" value="{{data.level.value}}">
+                </div>
+                <div class="strength">
+                    <label>{{data.strength.label}}</label>
+                    <input type="number" min="0" name="data.strength.value" value="{{data.strength.value}}">
+                </div>
+                <div class="influence">
+                    <label>{{data.influence.label}}</label>
+                    <input type="number" min="0" name="data.influence.value" value="{{data.influence.value}}">
+                </div>
+            </div>
+            <div class="sheet-edit">
+                {{editor content=data.sheet target="data.sheet" button=true owner=owner editable=editable}}
+            </div>
+        </div>
+
+        {{!-- Notizen Tab --}}
+        <div class="tab note-edit" data-group="primary" data-tab="notes">
+            {{editor content=data.notes target="data.notes" button=true owner=owner editable=editable}}
+        </div>
+    </section> -->
+</form>

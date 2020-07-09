@@ -1,0 +1,55 @@
+.sea-dangerpoints {
+  min-width: 450px;
+  min-height: 200px;
+}
+.sea-dangerpoints .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2ex 0ex;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  color: white;
+}
+.sea-dangerpoints .header .points {
+  display: flex;
+  flex-direction: column;
+  background-color: #00004d;
+  width: 20ex;
+  height: 20ex;
+  border-radius: 10ex;
+}
+.sea-dangerpoints .header .points label {
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 6ex;
+}
+.sea-dangerpoints .header .points input {
+  border: 0px;
+  background: transparent;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding-left: 0.5ex;
+}
+.sea-dangerpoints .header .inc,
+.sea-dangerpoints .header .dec {
+  font-size: 25px;
+  font-weight: bold;
+  width: 5ex;
+  height: 5ex;
+  align-self: center;
+  border-radius: 2.5ex;
+  background-color: #00004d;
+  color: white;
+  padding-top: 1ex;
+}
+.sea-dangerpoints .header .inc:hover,
+.sea-dangerpoints .header .dec:hover {
+  box-shadow: 2px 2px 4px #800000;
+}
+.sea-dangerpoints .header .inc:active,
+.sea-dangerpoints .header .dec:active {
+  box-shadow: none;
+}

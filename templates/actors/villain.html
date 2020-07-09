@@ -1,0 +1,51 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{!-- Sheet Header --}}
+    <header class="header">
+        <div class="header-1">
+            <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+            <span class="right-double-border"></span>
+            <input class="profile-name" name="name" type="text" value="{{actor.name}}" placeholder="Name" />
+            <span class="right-double-border"></span>
+            <img class="profile-logo" src="systems/sea/images/7te_see_logo.png" title="7-te See" />
+        </div>
+        <div class="header-2">
+            <div class="level">
+                <label>{{data.level.label}}</label>
+                <input type="number" min="0" name="data.level.value" value="{{data.level.value}}">
+            </div>
+            <div class="strength">
+                <label class="rollable" data-value="{{data.strength.value}}">{{data.strength.label}}</label>
+                <input type="number" min="0" name="data.strength.value" value="{{data.strength.value}}">
+            </div>
+            <div class="influence">
+                <label>{{data.influence.label}}</label>
+                <input type="number" min="0" name="data.influence.value" value="{{data.influence.value}}">
+            </div>
+            <div class="raises">
+                <div class="img">
+                    <img class="raises-logo" src="systems/sea/images/arrow-up-inv.png" title="Steigerungen" />
+                </div>
+                <input type="number" min="0" name="data.raises.value" value="{{data.raises.value}}">
+            </div>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="nav" data-group="primary">
+        <a class="item" data-tab="skills">Eigenschaften</a>
+        <a class="item" data-tab="notes">Notizen</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="body">
+        {{!-- Skills Tab --}}
+        <div class="tab sheet-edit" data-group="primary" data-tab="skills">
+            {{editor content=data.sheet target="data.sheet" button=true owner=owner editable=editable}}
+        </div>
+
+        {{!-- Notizen Tab --}}
+        <div class="tab note-edit" data-group="primary" data-tab="notes">
+            {{editor content=data.notes target="data.notes" button=true owner=owner editable=editable}}
+        </div>
+    </section>
+</form>

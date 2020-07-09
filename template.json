@@ -1,0 +1,270 @@
+{
+    "Actor": {
+        "types": [
+            "character",
+            "villain",
+            "dangerpoints"
+        ],
+        "character": {
+            "locked": "Gesperrt",
+            "rollbonus": 0,
+            "rollattr": {
+                "value": 0,
+                "key": ""
+            },
+            "rollskill": {
+                "value": 0,
+                "key": ""
+            },
+            "notes": "Notizen",
+            "header": {
+                "wounds": {
+                    "label": "Wunden",
+                    "value": 0,
+                    "critvalue": 0,
+                    "min": 0,
+                    "max": 20,
+                    "description": {
+                        "1": "+1W10 für alle Risiken.",
+                        "2": "Schurken erhalten 2 Bonuswürfel gegen dich.",
+                        "3": "Explodierende Zehnen.",
+                        "4": "Du bist wehrlos."
+                    }
+                },
+                "corruption": {
+                    "label": "Korruption",
+                    "value": 0,
+                    "min": 0,
+                    "max": 10
+                },
+                "heropoints": {
+                    "label": "Heldenpunkte",
+                    "value": 0,
+                    "min": 0
+                },
+                "advantages": {
+                    "value": "",
+                    "label": "Vorteile"
+                },
+                "wealth": {
+                    "value": 0,
+                    "label": "Reichtum"
+                },
+                "raises": {
+                    "value": 0,
+                    "min": 0,
+                    "label": "Steigerungen"
+                }
+            },
+            "attributes": {
+                "resolve": {
+                    "value": 2,
+                    "max": 5,
+                    "min": 2,
+                    "label": "Entschlossenheit",
+                    "cssClass": "",
+                    "modifier": []
+                },
+                "finesse": {
+                    "value": 2,
+                    "max": 5,
+                    "min": 2,
+                    "label": "Gewandtheit",
+                    "cssClass": "",
+                    "modifier": []
+                },
+                "brawn": {
+                    "value": 2,
+                    "max": 5,
+                    "min": 2,
+                    "label": "Muskeln",
+                    "cssClass": "",
+                    "modifier": []
+                },
+                "panache": {
+                    "value": 2,
+                    "max": 5,
+                    "min": 2,
+                    "label": "Stil",
+                    "cssClass": "",
+                    "modifier": []
+                },
+                "wits": {
+                    "value": 2,
+                    "max": 5,
+                    "min": 2,
+                    "label": "Verstand",
+                    "cssClass": "",
+                    "modifier": []
+                }
+            },
+            "skills": {
+                "athletics": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Athletik",
+                    "modifier": []
+                },
+                "tempt": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Beeinflussen",
+                    "modifier": []
+                },
+                "perform": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Darstellen",
+                    "modifier": []
+                },
+                "intimidate": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Einschüchtern",
+                    "modifier": []
+                },
+                "empathy": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Empathie",
+                    "modifier": []
+                },
+                "scholarship": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Gelehrsamkeit",
+                    "modifier": []
+                },
+                "warfare": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Kriegsführung",
+                    "modifier": []
+                },
+                "brawl": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Raufen",
+                    "modifier": []
+                },
+                "ride": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Reiten/Fahren",
+                    "modifier": []
+                },
+                "sailing": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Segeln",
+                    "modifier": []
+                },
+                "theft": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Stehlen",
+                    "modifier": []
+                },
+                "convince": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Überzeugen",
+                    "modifier": []
+                },
+                "hide": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Verbergen",
+                    "modifier": []
+                },
+                "weaponry": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Waffen",
+                    "modifier": []
+                },
+                "notice": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Wahrnehmen",
+                    "modifier": []
+                },
+                "aim": {
+                    "value": 0,
+                    "max": 5,
+                    "min": 0,
+                    "label": "Zielen",
+                    "modifier": []
+                }
+            },
+            "description": {
+                "3": "Einen W10 Nachwürfeln",
+                "4": "Jede 15=2 Steigerungen",
+                "5": "Explodierende Zehnen"
+            },
+            "derived": {
+                "woundlevel": {
+                    "value": 0,
+                    "label": "Wundenlevel",
+                    "modifier": []
+                }
+            }
+        },
+        "villain": {
+            "notes": "",
+            "sheet": "",
+            "level": {
+                "label": "Level",
+                "value": 0,
+                "min": 0
+            },
+            "strength": {
+                "label": "Stärke",
+                "value": 0,
+                "min": 0
+            },
+            "influence": {
+                "label": "Einfluss",
+                "value": 0,
+                "min": 0
+            },
+            "raises": {
+                "label": "Steigerungen",
+                "value": 0,
+                "min": 0
+            }
+        },
+        "dangerpoints": {
+            "label": "Gefahrenpunkte",
+            "value": 0,
+            "min": 0
+        }
+    },
+
+    "Item": {
+        "types": [
+            "item"
+        ],
+        "item": {
+            "description": "",
+            "quantity": 1,
+            "weight": 0,
+            "attributes": {}
+        }
+    }
+}
