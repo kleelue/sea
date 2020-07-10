@@ -35,9 +35,10 @@ Das Projekt entsteht in meiner Freizeit, und dient nur dem Zweck, unsere 7-te Se
 Zur Installation in Foundry kann der folgende Link genutzt werden:
 [Manifest-URL:](https://raw.githubusercontent.com/kleelue/sea/master/system.json) https://raw.githubusercontent.com/kleelue/sea/master/system.json.
 
+Eine Lokalisation für Deutsch und Englisch ist vorhanden. Weitere Übersetzungen können gern beigesteuert werden. Diese werden dann eingebaut bzw. mit hinterlegt. Für beigesteuerte Übersetzungen übernehme ich keine Verantwortung für Vollständigkeit und Richtigkeit. 
+
 ### Schön zu haben wäre... (keine Reihenfolge)
 * Die Berechnung der Steigerungen nach dem Würfeln. Bisher werden diese mnauell ermittelt und einfach eingetragen.
-* Eine Lokalisation, um das System mehrsprachig gestalten zu können.
 * Eine Möglichkeit zur Erfassung von Arkana(Tugend/Untugend), Vorteilen und ggf. Hintergründen (Spleens)
 
 ## Credits
