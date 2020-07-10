@@ -10,20 +10,20 @@
         </div>
         <div class="header-2">
             <div class="level">
-                <label>{{data.level.label}}</label>
+                <label>{{localize "SEA.VillainLevel"}}</label>
                 <input type="number" min="0" name="data.level.value" value="{{data.level.value}}">
             </div>
             <div class="strength">
-                <label class="rollable" data-value="{{data.strength.value}}">{{data.strength.label}}</label>
+                <label class="rollable" data-value="{{data.strength.value}}">{{localize "SEA.VillainStrength"}}</label>
                 <input type="number" min="0" name="data.strength.value" value="{{data.strength.value}}">
             </div>
             <div class="influence">
-                <label>{{data.influence.label}}</label>
+                <label>{{localize "SEA.VillainInfluence"}}</label>
                 <input type="number" min="0" name="data.influence.value" value="{{data.influence.value}}">
             </div>
             <div class="raises">
                 <div class="img">
-                    <img class="raises-logo" src="systems/sea/images/arrow-up-inv.png" title="Steigerungen" />
+                    <img class="raises-logo" src="systems/sea/images/arrow-up-inv.png" title="{{localize 'SEA.HeaderRaises'}}" />
                 </div>
                 <input type="number" min="0" name="data.raises.value" value="{{data.raises.value}}">
             </div>
@@ -32,8 +32,8 @@
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="nav" data-group="primary">
-        <a class="item" data-tab="skills">Eigenschaften</a>
-        <a class="item" data-tab="notes">Notizen</a>
+        <a class="item" data-tab="skills">{{localize "SEA.NavSkills"}}</a>
+        <a class="item" data-tab="notes">{{localize "SEA.NavNotes"}}</a>
     </nav>
 
     {{!-- Sheet Body --}}

@@ -6,7 +6,7 @@
             "dangerpoints"
         ],
         "character": {
-            "locked": "Gesperrt",
+            "locked": 1,
             "rollbonus": 0,
             "rollattr": {
                 "value": 0,
@@ -16,44 +16,36 @@
                 "value": 0,
                 "key": ""
             },
-            "notes": "Notizen",
+            "notes": "",
             "header": {
                 "wounds": {
-                    "label": "Wunden",
                     "value": 0,
                     "critvalue": 0,
                     "min": 0,
                     "max": 20,
                     "description": {
-                        "1": "+1W10 für alle Risiken.",
-                        "2": "Schurken erhalten 2 Bonuswürfel gegen dich.",
-                        "3": "Explodierende Zehnen.",
-                        "4": "Du bist wehrlos."
+                        "0": "SEA.WoundDesc0",
+                        "1": "SEA.WoundDesc1",
+                        "2": "SEA.WoundDesc2",
+                        "3": "SEA.WoundDesc3",
+                        "4": "SEA.WoundDesc4"
                     }
                 },
                 "corruption": {
-                    "label": "Korruption",
                     "value": 0,
                     "min": 0,
                     "max": 10
                 },
                 "heropoints": {
-                    "label": "Heldenpunkte",
                     "value": 0,
                     "min": 0
                 },
-                "advantages": {
-                    "value": "",
-                    "label": "Vorteile"
-                },
                 "wealth": {
-                    "value": 0,
-                    "label": "Reichtum"
+                    "value": 0
                 },
                 "raises": {
                     "value": 0,
-                    "min": 0,
-                    "label": "Steigerungen"
+                    "min": 0
                 }
             },
             "attributes": {
@@ -98,124 +90,107 @@
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Athletik",
                     "modifier": []
                 },
                 "tempt": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Beeinflussen",
                     "modifier": []
                 },
                 "perform": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Darstellen",
                     "modifier": []
                 },
                 "intimidate": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Einschüchtern",
                     "modifier": []
                 },
                 "empathy": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Empathie",
                     "modifier": []
                 },
                 "scholarship": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Gelehrsamkeit",
                     "modifier": []
                 },
                 "warfare": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Kriegsführung",
                     "modifier": []
                 },
                 "brawl": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Raufen",
                     "modifier": []
                 },
                 "ride": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Reiten/Fahren",
                     "modifier": []
                 },
                 "sailing": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Segeln",
                     "modifier": []
                 },
                 "theft": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Stehlen",
                     "modifier": []
                 },
                 "convince": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Überzeugen",
                     "modifier": []
                 },
                 "hide": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Verbergen",
                     "modifier": []
                 },
                 "weaponry": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Waffen",
                     "modifier": []
                 },
                 "notice": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Wahrnehmen",
                     "modifier": []
                 },
                 "aim": {
                     "value": 0,
                     "max": 5,
                     "min": 0,
-                    "label": "Zielen",
                     "modifier": []
                 }
             },
             "description": {
-                "3": "Einen W10 Nachwürfeln",
-                "4": "Jede 15=2 Steigerungen",
-                "5": "Explodierende Zehnen"
+                "3": "SEA.SkillBonusDescr1",
+                "4": "SEA.SkillBonusDescr2",
+                "5": "SEA.SkillBonusDescr3"
             },
             "derived": {
                 "woundlevel": {
                     "value": 0,
-                    "label": "Wundenlevel",
                     "modifier": []
                 }
             }
@@ -224,28 +199,23 @@
             "notes": "",
             "sheet": "",
             "level": {
-                "label": "Level",
                 "value": 0,
                 "min": 0
             },
             "strength": {
-                "label": "Stärke",
                 "value": 0,
                 "min": 0
             },
             "influence": {
-                "label": "Einfluss",
                 "value": 0,
                 "min": 0
             },
             "raises": {
-                "label": "Steigerungen",
                 "value": 0,
                 "min": 0
             }
         },
         "dangerpoints": {
-            "label": "Gefahrenpunkte",
             "value": 0,
             "min": 0
         }

@@ -9,32 +9,32 @@
             <img class="profile-logo" src="systems/sea/images/7te_see_logo.png" title="7-te See" />
         </div>
         <div class="header-2">
-            <label>{{data.header.wounds.label}}</label>
+            <label>{{localize "SEA.HeaderWounds"}}</label>
             <div class="wounds">
                 {{{buildDots data.header.wounds.value data.header.wounds.max "wounds" data.header.wounds.critvalue}}}
             </div>
-            <img class="raises-img" src="systems/sea/images/arrow-up.png" title="Steigerungen" />
-            <input class="raises-val" type="number" name="data.header.raises.value" value="{{data.header.raises.value}}" min="{{data.header.raises.min}}" placeholder="0" title="Steigerungen" />
+            <img class="raises-img" src="systems/sea/images/arrow-up.png" title="{{localize 'SEA.HeaderRaises'}}" />
+            <input class="raises-val" type="number" name="data.header.raises.value" value="{{data.header.raises.value}}" min="{{data.header.raises.min}}" placeholder="0" title="{{localize 'SEA.HeaderRaises'}}" />
         </div>
         <div class="header-3">
             {{{buildWoundDesc data.header.wounds.critvalue data.header.wounds.description}}}
         </div>
         <div class="header-4">
-            <label>{{data.header.corruption.label}}</label>
+            <label>{{localize "SEA.HeaderCorruption"}}</label>
             <div class="corruption">
                 {{{buildDots data.header.corruption.value data.header.corruption.max "corruption" ""}}}
             </div>
-            <img class="wealth-img" src="systems/sea/images/coins.png" title="Reichtum" />
-            <input class="wealth-val" name="data.header.wealth.value" type="number" value="{{data.header.wealth.value}}" min="0" title="Reichtum" />
-            <img class="heropoints-img" src="systems/sea/images/muscle.png" title="Heldenpunkte" />
-            <input class="heropoints-val" name="data.header.heropoints.value" type="number" value="{{data.header.heropoints.value}}" min="0" title="Heldenpunkte" />
+            <img class="wealth-img" src="systems/sea/images/coins.png" title="{{localize 'SEA.HeaderWealth'}}" />
+            <input class="wealth-val" name="data.header.wealth.value" type="number" value="{{data.header.wealth.value}}" min="0" title="{{localize 'SEA.HeaderWealth'}}" />
+            <img class="heropoints-img" src="systems/sea/images/muscle.png" title="{{localize 'SEA.HeaderHeropoints'}}" />
+            <input class="heropoints-val" name="data.header.heropoints.value" type="number" value="{{data.header.heropoints.value}}" min="0" title="{{localize 'SEA.HeaderHeropoints'}}" />
         </div>
     </header>
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="nav" data-group="primary">
-        <a class="item" data-tab="skills">Eigenschaften & Fähigkeiten</a>
-        <a class="item" data-tab="notes">Notizen</a>
+        <a class="item" data-tab="skills">{{localize "SEA.NavAttrSkill"}}</a>
+        <a class="item" data-tab="notes">{{localize "SEA.NavNotes"}}</a>
     </nav>
 
     {{!-- Sheet Body --}}
@@ -52,26 +52,26 @@
                     </div>
                     {{/each}}
                     <div class="reset-roll">
-                        Auswahl zurücksetzen
+                        {{localize 'SEA.ResetRoll'}}
                     </div>
                     <div class="roll">
-                        <input type="number" class="bonus-attr" name="data.rollattr.value" min="0" value="{{data.rollattr.value}}" title="Attributswert" style="display:none">
-                        <input type="number" class="bonus-skill" name="data.rollskill.value" min="0" value="{{data.rollskill.value}}" title="Skillwert" style="display:none">
-                        <div class="bonus-label">Bonuswürfel:</div>
-                        <input type="number" class="bonus-roll" name="data.rollbonus" min="0" value="{{data.rollbonus}}" title="Bonuswürfel">
-                        <img class="roll-img" src="systems/sea/images/d20.png" title="Würfeln" />
+                        <input type="number" class="bonus-attr" name="data.rollattr.value" min="0" value="{{data.rollattr.value}}" style="display:none">
+                        <input type="number" class="bonus-skill" name="data.rollskill.value" min="0" value="{{data.rollskill.value}}" style="display:none">
+                        <div class="bonus-label">{{localize "SEA.BonusDice"}}:</div>
+                        <input type="number" class="bonus-roll" name="data.rollbonus" min="0" value="{{data.rollbonus}}" title="{{localize 'SEA.BonusDice'}}">
+                        <img class="roll-img" src="systems/sea/images/d20.png" title="{{localize 'SEA.Roll'}}" />
                     </div>
-                    <h4>Fähigkeitenboni</h4>
+                    <h4>{{localize 'SEA.SkillBonus'}}</h4>
                     {{#each data.description as |desc key|}}
                     <div class="descriptions">
                         <label>Stufe {{key}}:</label>
                         <div class="desc">
-                            {{desc}}
+                            {{localize desc}}
                         </div>
                     </div>
                     {{/each}}
-                    <div class="locked">
-                        {{data.locked}}
+                    <div class="locked" data-locked="{{data.locked}}">
+                        {{#if data.locked}} {{localize 'SEA.locked'}} {{else}} {{localize 'SEA.editable'}} {{/if}}
                     </div>
                 </div>
                 <div class="skills">

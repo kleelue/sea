@@ -47,14 +47,14 @@ Hooks.once("init", async function() {
     Actors.registerSheet("sea", ActorSheetSeaDangerpoints, { types: ["dangerpoints"], makeDefault: false });
 
     // Register system settings
-    game.settings.register("sea", "macroShorthand", {
-        name: "Shortened Macro Syntax",
-        hint: "Enable a shortened macro syntax which allows referencing attributes directly, for example @str instead of @attributes.str.value. Disable this setting if you need the ability to reference the full attribute model, for example @attributes.str.label.",
-        scope: "world",
-        type: Boolean,
-        default: true,
-        config: true
-    });
+    // game.settings.register("sea", "macroShorthand", {
+    //     name: "Shortened Macro Syntax",
+    //     hint: "Enable a shortened macro syntax which allows referencing attributes directly, for example @str instead of @attributes.str.value. Disable this setting if you need the ability to reference the full attribute model, for example @attributes.str.label.",
+    //     scope: "world",
+    //     type: Boolean,
+    //     default: true,
+    //     config: true
+    // });
 
     //Setup helper for wounds description
     Handlebars.registerHelper('buildWoundDesc', function(current, desc) {
@@ -62,12 +62,12 @@ Hooks.once("init", async function() {
         if (current > 0) {
             var x = 0;
             for (x = 1; x <= current; x++) {
-                outStr += "<div class=\"desc\">Stufe " + x + ": </div>";
-                outStr += "<div class=\"item\">" + desc[x] + "</div>";
+                outStr += "<div class=\"desc\">" + game.i18n.localize("SEA.stage") + " " + x + ": </div>";
+                outStr += "<div class=\"item\">" + game.i18n.localize(SEA.WoundDesc[x]) + "</div>";
             }
         } else {
-            outStr += "<div class=\"desc\">Stufe 0: </div>";
-            outStr += "<div class=\"item\">Keine Auswirkungen</div>";
+            outStr += "<div class=\"desc\">" + game.i18n.localize("SEA.stage") + " 0: </div>";
+            outStr += "<div class=\"item\">" + game.i18n.localize(SEA.WoundDesc[0]) + "</div>";
         }
         return outStr;
     });
@@ -145,31 +145,33 @@ Hooks.once("init", async function() {
  * This function runs after game data has been requested
  * and loaded from the servers, so entities exist
  */
-Hooks.once('setup', function() {
-    // Localize CONFIG objects once up-front
-    const toLocalize = [
-        'attributes'
-    ]
+// Hooks.once('setup', function() {
+//     // Localize CONFIG objects once up-front
+//     const toLocalize = [
+//         'attributes'
+//     ]
 
-    // Exclude some from sorting where the default order matters
-    const noSort = []
+//     // Exclude some from sorting where the default order matters
+//     const noSort = []
 
-    // Localize and sort CONFIG objects
-    for (const o of toLocalize) {
-        const localized = Object.entries(CONFIG.SEA[o]).map(e => {
-            return [e[0], game.i18n.localize(e[1])]
-        })
-        if (!noSort.includes(o)) localized.sort((a, b) => a[1].localeCompare(b[1]))
-        CONFIG.SEA[o] = localized.reduce((obj, e) => {
-            obj[e[0]] = e[1]
-            return obj
-        }, {})
-    }
-});
+//     // Localize and sort CONFIG objects
+//     for (const o of toLocalize) {
+//         const localized = Object.entries(CONFIG.SEA[o]).map(e => {
+//             return [e[0], game.i18n.localize(e[1])]
+//         })
+//         if (!noSort.includes(o)) localized.sort((a, b) => a[1].localeCompare(b[1]))
+//         CONFIG.SEA[o] = localized.reduce((obj, e) => {
+//             obj[e[0]] = e[1]
+//             return obj
+//         }, {})
+//     }
+// });
 
 /**
  * Set the default name for an actor if none is given
  **/
 Hooks.on('preCreateActor', function(entity, options, userId) {
-    entity.name = "New " + (entity.type)[0].toUpperCase() + (entity.type).slice(1);
+    if (entity.name == "") {
+        entity.name = "New " + (entity.type)[0].toUpperCase() + (entity.type).slice(1);
+    }
 });

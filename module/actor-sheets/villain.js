@@ -1,3 +1,5 @@
+//import config for localization
+import { SEA } from '../config.js';
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
@@ -51,7 +53,7 @@ export class ActorSheetSeaVillain extends ActorSheet {
         // Convert the roll to a chat message and return the roll
         //let mySpeaker = ChatMessage.getSpeaker();
         //roll.toMessage({ speaker: mySpeaker });
-        roll.toMessage({ speaker: { alias: game.user.name + " würfelt für " + actor.data.name } });
+        roll.toMessage({ speaker: { alias: game.user.name + " " + game.i18n.localize("SEA.RollsFor") + " " + actor.data.name } });
         console.log(roll.dice);
         return roll;
     }
