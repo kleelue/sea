@@ -1,3 +1,5 @@
+//import config for localization
+import { SEA } from '../config.js';
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
@@ -22,6 +24,11 @@ export class ActorSheetSeaCharacter extends ActorSheet {
         const data = super.getData();
         data.actor = data.entity;
         data.data = data.entity.data;
+
+        for (let [key, attr] of Object.entries(data.data.attributes)) {
+            attr.label = game.i18n.localize(SEA.attributes[key]);
+        }
+
         return data;
     }
 

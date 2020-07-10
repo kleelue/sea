@@ -3,8 +3,9 @@
  * Author: Atropos
  * Software License: GNU GPLv3
  */
-
 // Import Modules
+import { SEA } from './config.js'
+// Import Applications
 import { ActorSea } from "./actors/actor.js";
 import { ActorSheetSeaCharacter } from "./actor-sheets/character.js";
 import { ActorSheetSeaVillain } from "./actor-sheets/villain.js";
@@ -18,6 +19,13 @@ import { ActorSheetSeaDangerpoints } from "./actor-sheets/dangerpoints.js";
 Hooks.once("init", async function() {
     console.log(`Initializing 7th Sea System`);
 
+    game.sea = {
+        applications: {
+            ActorSea
+        },
+        config: SEA
+    }
+
     /**
      * Set an initiative formula for the system
      * @type {String}
@@ -26,6 +34,8 @@ Hooks.once("init", async function() {
         formula: "1d20",
         decimals: 2
     };
+
+    CONFIG.SEA = SEA;
 
     // Define custom Entity classes
     CONFIG.Actor.entityClass = ActorSea;
@@ -130,4 +140,35 @@ Hooks.once("init", async function() {
         return outStr;
     });
 
+});
+/**
+ * This function runs after game data has been requested
+ * and loaded from the servers, so entities exist
+ */
+Hooks.once('setup', function() {
+    // Localize CONFIG objects once up-front
+    const toLocalize = [
+        'attributes'
+    ]
+
+    // Exclude some from sorting where the default order matters
+    const noSort = []
+
+    // Localize and sort CONFIG objects
+    for (const o of toLocalize) {
+        const localized = Object.entries(CONFIG.SEA[o]).map(e => {
+            return [e[0], game.i18n.localize(e[1])]
+        })
+        if (!noSort.includes(o)) localized.sort((a, b) => a[1].localeCompare(b[1]))
+        CONFIG.SEA[o] = localized.reduce((obj, e) => {
+            obj[e[0]] = e[1]
+            return obj
+        }, {})
+    }
+});
+/**
+ * Set the default name for an actor
+ **/
+Hooks.on('preCreateActor', function(entity, options, userId) {
+    entity.name = "New " + (entity.type)[0].toUpperCase() + (entity.type).slice(1);
 });

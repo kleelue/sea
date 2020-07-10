@@ -2,7 +2,7 @@
     "name": "sea",
     "title": "7-te See",
     "description": "Ein Versuch das 7te See-Regelwerk der 2. Edition nach Foundry zu bringen.",
-    "version": 0.1,
+    "version": 0.20,
     "minimumCoreVersion": "0.6.4",
     "compatibleCoreVersion": "0.6.5",
     "templateVersion": 2,
@@ -17,7 +17,11 @@
         "styles/actors/dangerpoints.css"
     ],
     "packs": [],
-    "languages": [],
+    "languages": [{
+        "lang": "en",
+        "name": "English",
+        "path": "lang/sea-en.json"
+    }],
     "gridDistance": 5,
     "gridUnits": "ft",
     "primaryTokenAttribute": null,

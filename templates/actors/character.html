@@ -45,7 +45,7 @@
                 <div class="attributes">
                     {{#each data.attributes as |attr key|}}
                     <div class="item">
-                        <label class="roll-attr {{key}} {{attr.cssClass}}" data-key="{{key}}" data-attr="{{attr.value}}">{{attr.label}}</label>
+                        <label class="roll-attr {{key}} {{attr.cssClass}}" data-key="{{key}}" data-attr="{{attr.value}}">{{localize attr.label}}</label>
                         <div class="circles">
                             {{{buildDots attr.value attr.max "attributes" key}}}
                         </div>
