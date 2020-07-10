@@ -1,7 +1,7 @@
 # 7-te See System (2. Edition) für FoundryVTT
 
 ## Rollenspielsystem
-Dem System zugrunde liegt die deutsche Übersetzung von [7te See](https://www.chaosium.com/7th-sea/), im Original von caosium vertrieben. 
+Dem System zugrunde liegt die deutsche Übersetzung von [7te See](https://www.chaosium.com/7th-sea/), im Original von Chaosium vertrieben. 
 
 ## Nutzung
 Es gibt kein Linzenzfreies Material zu 7te See, welches als Grundlage zur Verfügung gestellt werden kann. Der DM ist also selbst dafür verantwortlich, die Daten einzupflegen.
