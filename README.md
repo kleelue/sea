@@ -14,7 +14,9 @@ Es gibt ein Charakterblatt, welches einige Funktionen bietet:
 * Die Werte für Eigenschaften und Fähigkeiten kann man durch einen Klick auf "Gesperrt" fest einstellen, so dass bei der Auswahl zum würfel nicht ausversehen ein Wert verändert werden kann.
 * Wunden und Kritische Wunden werden separat voneinander behandelt, aber in einer Zeile dargestellt. Ein anklicken der Herzchen/Punkte reicht, um die Werte zu setzen.
 * Hinweise zu kritsichen Wunden und deren Auswirkungen werden je nach Höhe der erlittenen Wunden eingeblendet.
+
 ![Charakterblatt Seite 2](https://imgur.com/Bd6TLfG.png)
+
 * Hie befindet sich ein Editor, um Arkana, Vorteile, Notizen und alles andere wichtige zu hinterlegen. Das ließe sich auch in Journalen realisieren, ist hier aber auf dem Charakterblatt verfügbar.
 * Das Blatt ist auch für NPC-Helden verwendbar. In dem Fall ignoriert man die Werte, welche ein NPC nicht braucht, einfach.
 
