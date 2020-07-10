@@ -1,7 +1,7 @@
 {
     "name": "sea",
     "title": "7-te See",
-    "description": "Ein Versuch das 7te See-Regelwerk nach Foundry zu bringen.",
+    "description": "Ein Versuch das 7te See-Regelwerk der 2. Edition nach Foundry zu bringen.",
     "version": 0.1,
     "minimumCoreVersion": "0.6.4",
     "compatibleCoreVersion": "0.6.5",
