@@ -17,7 +17,7 @@ Es gibt ein Charakterblatt, welches einige Funktionen bietet:
 
 ![Charakterblatt Seite 2](https://imgur.com/Bd6TLfG.png)
 
-* Hie befindet sich ein Editor, um Arkana, Vorteile, Notizen und alles andere wichtige zu hinterlegen. Das ließe sich auch in Journalen realisieren, ist hier aber auf dem Charakterblatt verfügbar.
+* Hier befindet sich ein Editor, um Arkana, Vorteile, Notizen und alles andere wichtige zu hinterlegen. Das ließe sich auch in Journalen realisieren, ist hier aber auf dem Charakterblatt verfügbar.
 * Das Blatt ist auch für NPC-Helden verwendbar. In dem Fall ignoriert man die Werte, welche ein NPC nicht braucht, einfach.
 
 ### Charakterblatt - Gefahrenpunkte
