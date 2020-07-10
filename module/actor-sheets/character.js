@@ -26,7 +26,11 @@ export class ActorSheetSeaCharacter extends ActorSheet {
         data.data = data.entity.data;
 
         for (let [key, attr] of Object.entries(data.data.attributes)) {
-            attr.label = game.i18n.localize(SEA.attributes[key]);
+            console.log(CONFIG.SEA);
+            console.log(CONFIG.SEA.attributes[key]);
+            console.log(game.i18n.localize(CONFIG.SEA.attributes[key]));
+            console.log(game.i18n.localize("SEA.AttributePanache"));
+            //attr.label = game.i18n.localize(SEA.attributes[key]);
         }
 
         return data;

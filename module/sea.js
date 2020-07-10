@@ -166,8 +166,9 @@ Hooks.once('setup', function() {
         }, {})
     }
 });
+
 /**
- * Set the default name for an actor
+ * Set the default name for an actor if none is given
  **/
 Hooks.on('preCreateActor', function(entity, options, userId) {
     entity.name = "New " + (entity.type)[0].toUpperCase() + (entity.type).slice(1);
