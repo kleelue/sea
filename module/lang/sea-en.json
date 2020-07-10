@@ -1,7 +1,7 @@
 {
-    "SEA.AttributeResolve": "Entschlossenheit-lang",
-    "SEA.AttributeFinesse": "Gewandtheit-lang",
-    "SEA.AttributeBrawn": "Muskeln-lang",
-    "SEA.AttributePanache": "Stil-lang",
-    "SEA.AttributeWits": "Verstand-lang"
+    "SEA.AttributeResolve": "Resolve",
+    "SEA.AttributeFinesse": "Finesse",
+    "SEA.AttributeBrawn": "Brawn",
+    "SEA.AttributePanache": "Panache",
+    "SEA.AttributeWits": "Wits"
 }
