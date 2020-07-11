@@ -58,7 +58,7 @@
   border-radius: 20px;
   border: 1px dotted white;
 }
-.sea-villain .header .header-2 .strength:hover {
+.sea-villain .header .header-2 .rollable:hover {
   text-shadow: 2px 2px 4px white;
 }
 .sea-villain .header .header-2 input {

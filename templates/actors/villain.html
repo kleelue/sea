@@ -10,11 +10,11 @@
         </div>
         <div class="header-2">
             <div class="level">
-                <label>{{localize "SEA.VillainLevel"}}</label>
+                <label class="rollable" data-value="{{data.level.value}}">{{localize "SEA.VillainLevel"}}</label>
                 <input type="number" min="0" name="data.level.value" value="{{data.level.value}}">
             </div>
             <div class="strength">
-                <label class="rollable" data-value="{{data.strength.value}}">{{localize "SEA.VillainStrength"}}</label>
+                <label>{{localize "SEA.VillainStrength"}}</label>
                 <input type="number" min="0" name="data.strength.value" value="{{data.strength.value}}">
             </div>
             <div class="influence">
