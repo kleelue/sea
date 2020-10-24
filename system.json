@@ -2,9 +2,9 @@
     "name": "sea",
     "title": "7-te See",
     "description": "Ein Versuch das 7te See-Regelwerk der 2. Edition nach Foundry zu bringen.",
-    "version": 0.1,
+    "version": 0.2,
     "minimumCoreVersion": "0.6.4",
-    "compatibleCoreVersion": "0.6.5",
+    "compatibleCoreVersion": "0.7.5",
     "templateVersion": 2,
     "author": "Luette",
     "esmodules": [

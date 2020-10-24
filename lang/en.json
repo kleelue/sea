@@ -43,7 +43,7 @@
     "SEA.SkillBonusDescr3": "10s explode (+1 die)",
     "SEA.WoundDesc0": "No Effect.",
     "SEA.WoundDesc1": "+1 Bonus Die to Risks.",
-    "SEA.WoundDesc2": "Villains gain +2 Bonus Dice.",
+    "SEA.WoundDesc2": "-2 Dice for every Roll.",
     "SEA.WoundDesc3": "Your 10s Explode (+1 die).",
     "SEA.WoundDesc4": "You become helpless.",
     "SEA.stage": "Stage",

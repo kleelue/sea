@@ -43,7 +43,7 @@
     "SEA.SkillBonusDescr3": "Explodierende Zehnen",
     "SEA.WoundDesc0": "Keine Auswirkungen.",
     "SEA.WoundDesc1": "+1W10 für alle Risiken.",
-    "SEA.WoundDesc2": "Schurken erhalten 2 Bonuswürfel gegen dich.",
+    "SEA.WoundDesc2": "-2W10 für jeden Wurf.",
     "SEA.WoundDesc3": "Explodierende Zehnen.",
     "SEA.WoundDesc4": "Du bist wehrlos.",
     "SEA.stage": "Stufe",
